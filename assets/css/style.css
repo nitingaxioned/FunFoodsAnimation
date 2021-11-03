@@ -99,51 +99,213 @@ li {
 
 /*for wrapper*/
 .wrapper {
-  max-width: 1360px;
-  width: 86%; 
-  margin: 0 auto;
-}
-/*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
+  width: 50vh;
+  max-width: 100%;
+  overflow: hidden;
+  border: 1px solid #000000;
+  margin: 20px auto;
+  position: relative;
+  background-image: url("/./assets/butter_assets/bg.jpg");
+  background-size: cover;
+}  
 
 /*=================================
   main styling starts here
 =================================*/
+.table{
+  bottom: 0;
+  display: inline;
+  z-index: 3;
+  animation: fadeIn-anime 0.6s both;
+}
 
+.logo{ 
+  display: block;
+  position: static;
+  width: 16.5vh;
+  margin: 3vh auto 80.5vh auto;
+}
 
+p{
+  position: absolute;
+  text-align: center;
+  padding: 0 20%;
+  top: 18%;
+  color: #ed1c24;
+  text-align: center;
+  font-size: 32px;
+}
 
+img{ position: absolute; }
+.Boring{ animation: leftIn-anime 0.5s 1s both, leftIn-anime 0.5s reverse 3s forwards; }
+.Sandwicheto{ animation: leftIn-anime 0.5s 5.5s backwards, leftIn-anime 0.5s reverse 8s forwards; }
+.FunFoods span{display: block;}
+.Magic{ animation: leftIn-anime 0.5s 11.6s backwards; }
 
+.FunFoods{
+  padding: 0 5%;
+  animation: leftIn-anime 0.5s 8.5s backwards, leftIn-anime 0.5s reverse 11s forwards;
+}
 
+a{
+  position: absolute;
+  margin: auto;
+  top: 35%;
+  margin: 0 0 0 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  color: #ffffff;
+  background-color: #3f318c;
+  padding: 10px 5%;
+  border-radius: 5px;
+  animation: recipe-btn-anime 0.5s 13.8s backwards;
+}
 
+.plate{
+  bottom: 4%;
+  left: -13%;
+  z-index: 4;
+  width: 91.666%;
+  animation: leftIn-anime 0.3s 0.7s both, leftIn-anime 0.3s reverse 2.7s forwards;
+}
 
+.sad_sonali{
+  bottom: 16%;
+  right: -1%;
+  z-index: 4;
+  width: 70%;
+  animation: rignt-in-amine 0.5s 1s backwards, rignt-in-amine 0.5s reverse 3s forwards;
+}
+
+.happy_sonali{
+  bottom: 18%;
+  right: -1px;
+  z-index: 4;
+  width: 78%;
+  animation: rignt-in-amine 0.5s 5.5s backwards, rignt-in-amine 0.5s reverse 8s forwards;
+}
+
+.chef{
+  bottom: 18%;
+  right: -1%;
+  z-index: 2;
+  width: 81%;
+  animation: rignt-in-amine 0.5s 8.5s backwards, rignt-in-amine 0.5s reverse 11s forwards;
+}
+
+.sandwich_1{
+  bottom: 4%;
+  left: -13%;
+  z-index: 4;
+  width: 78.666%;
+  animation: leftIn-anime 0.3s 3.5s both, leftIn-anime 0.5s reverse 11s forwards;
+}
+
+.sandwich_2{
+  bottom: 8%;
+  left: -2%;
+  z-index: 4;
+  width: 51.333%;
+  animation: leftIn-anime 0.3s 3.5s both, leftIn-anime 0.5s reverse 11s forwards;
+}
+
+.sandwich_3{
+  bottom: 11%;
+  left: 1%;
+  z-index: 5;
+  width: 50.333%;
+  animation: leftIn-anime 0.3s 3.5s backwards, bread-anime 0.2s reverse 4s forwards, bread-anime 0.3s 4.9s forwards, leftIn-anime 0.5s reverse 11s forwards;
+}
+
+.mayo{
+  bottom: 9.5%;
+  left: 2%;
+  z-index: 5;
+  width: 46.666%;
+  animation: fadeIn-anime 0.5s 4.4s backwards, leftIn-anime 0.5s reverse 11s forwards;
+}
+
+.veg_mayo{
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  width: 37.666%;
+  animation: veg-mayo-anime 0.5s 11.6s backwards;
+}
+
+.knife{
+  bottom: 10%;
+  left: 11%;
+  transform: rotate(-55deg);
+  z-index: 6;
+  width: 24.333%;
+  animation: fadeIn-anime 0.1s 4.3s backwards, knife-anime 0.5s 4.4s both, fadeIn-anime 0.1s reverse 4.9s forwards;
+}
+
+.hat{
+  bottom: 28.5%;
+  left: 50%;
+  transform: translateX(-34%);
+  z-index: 6;
+  width: 46.333%;
+  animation: hat-anime 1.5s both 12.2s;
+}
+
+@keyframes leftIn-anime {
+  0%{ transform: translateX(-100vw); }
+  80%{ transform: translateX(-1vw); }
+  100%{ transform: translateX(0); }
+}
+
+@keyframes fadeIn-anime {
+  0%{ opacity: 0; }
+  100%{ opacity: 1; }
+}
+
+@keyframes recipe-btn-anime {
+  0%{ margin: -70% 0 0 -100%; }
+  100%{ margin: 0 0 0 50%; }
+}
+
+@keyframes hat-anime {
+  0%{
+    bottom: 50%;
+    margin: 0 0 0 -100%;
+  }
+  30%{
+    bottom: 40%;
+    margin: 0 0 0 0;
+  }
+  100%{
+    bottom: 28.5%;
+    margin: 0 0 0 0;
+  }
+}
+
+@keyframes rignt-in-amine {
+  0%{ transform: translateX(100%); }
+  100%{ transform: translateX(0); }
+}
+
+@keyframes veg-mayo-anime {
+  0%{ margin-left: 100%; }
+  100%{ margin-left: 0; }
+}
+
+@keyframes knife-anime {
+  0%{ left: 12%; }
+  100%{ left: 41%; }
+}
+
+@keyframes bread-anime {
+  0%{ bottom: 18%; }
+  100%{ bottom: 11%; }
+}
 
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
 
 /*media query starts*/
 /*media query for 995px starts here*/
